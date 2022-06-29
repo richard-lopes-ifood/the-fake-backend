@@ -38,7 +38,11 @@
     "build": "rollup --config",
     "start": "rollup --config --watch",
     "test": "jest --runInBand",
-    "test:coverage": "jest --runInBand --coverage"
+    "test:coverage": "jest --runInBand --coverage",
+    "lint": "echo 'No lint script was found. Moving on!'"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.dc.ifood.com.br/repository/ifood-npm-private/"
   },
   "dependencies": {
     "apollo-server-express": "^2.19.1",
