@@ -16,7 +16,7 @@ const routeToHtml = (basePath?: string) => (route: Route): string => {
   </div>`;
 };
 
-const sortByPath = sortBy(compose(toLower, prop('path')));
+const sortByPath = sortBy<Route>(compose(toLower, prop('path')));
 
 const htmlSummary = (routes: Route[], basePath?: string): string => {
   const sorted = sortByPath([...routes]);
