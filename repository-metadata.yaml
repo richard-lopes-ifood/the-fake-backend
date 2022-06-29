@@ -1,0 +1,34 @@
+# Important Notice
+#
+# This file is managed by Tompero’s indexing process.
+# Manual changes to the managed fields won’t take effect and will be overwritted by Tompero.
+#
+# Tompero will also push commits directly to this file when needed
+# without previous Notice.
+# Currently, the fields managed by Tompero are the following:
+# * requiredForDR
+
+apiVersion: ifood/v2
+kind: Repository
+tags:
+  - tool
+metadata:
+  costCenter: restaurant
+  tribe: restaurant
+  squad: channels
+  team:
+    alias: channels-front-team
+    channel: squad-channels
+    email: richard.lopes@ifood.com.br
+    owner: richard.lopes
+spec:
+  contents:
+    - name: the-fake-backend
+      type: other
+      subType:
+        - tool
+      impactLevel: 5
+      deployment:
+        type: none
+        chefRole: ''
+      ownerLayerSlug: cha-qa
